@@ -11,6 +11,7 @@
 */
 
 
+
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
@@ -71,4 +72,115 @@ a#pdf:hover { background: #222; }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
+@media (max-device-width: 1000px){
+	#doc2{
+		width: 90%
+	}
+	div#name > h1{
+		font-size: 2.5em;
+	}
+	div#name > h2 {
+		font-size: 1.5em
+	}
+	.contact-info {
+		width: 90%
+	}
+	p.enlarge{
+		font-size: 144%;
+		padding-right: 5%
+	}
+}
 
+@media (max-device-width: 738px){
+	p.enlarge{
+		font-size: 120%;
+		padding-right: 5%
+	}
+	.talent{
+		font-size: 95%;
+		margin-left: 0.4em;
+		text-align: justify-all;
+	}
+	.talent > h2{
+		font-size: 1.3em;
+	}
+	#inner {
+		padding: 2.3em
+	}
+	.yui-u > h2, h3 {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-device-width: 400px){
+	div#name > h1{
+		font-size: 1.5em;
+	}
+	div#name > h2 {
+		font-size: 1em
+	}
+	.contact-info {
+		font-size: 67%;
+	}
+	p.enlarge{
+		font-size: 80%;
+		padding-right: 0%;
+	}
+	.talent {
+		font-size: 60%;
+	}
+	.talent > li {
+		font-size: 110%;
+	}
+	.yui-u > h2{
+		padding-top: 5px;
+		font-size: 0.9em
+	}
+	#hd{
+		margin-bottom: 8%
+	}
+	.yui-gf {
+		margin-bottom: 5%
+	}
+	.job{
+		font-size: 70%;
+	}
+	.job > h4 {
+		font-size: 99.5%;
+	}
+	.yui-u > h3 {
+		font-size: 0.9em;
+	}
+	#ft {
+		padding-bottom: 0;
+	}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+	display: block;
+	border: 1px solid #ccc;
+  z-index: 1;
+  width: 550px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -300px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
